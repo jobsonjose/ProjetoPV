@@ -1,0 +1,54 @@
+body{
+
+	background-image: url("back1.jpg");
+
+	
+
+}
+img {
+
+	display: block;
+    margin: 0 auto;
+    display: block;
+  	max-width:35%;
+    max-height:25%;
+    width: auto;
+    height: auto;
+    
+}
+
+/* table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    th {
+    height: 50px;
+
+}
+} */
+
+
+.center{
+
+	   text-align: justify;
+	   margin: auto;
+        width: 50%;
+    	padding: 10px;
+	   font-size: 23px;
+}
+
+b:link, b:visited {
+    background-color: #333;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+b:hover{
+    background-color: #DCDCDC;
+}
+
+
+
