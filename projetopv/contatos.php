@@ -20,7 +20,7 @@
 		
 		<div class="center">
 			<dt><strong>E-mail:</strong></dt>
-				<dd>pontoevirguladesin@gmail.com</dd>
+				<dd>pontoevirguladesign2017@gmail.com</dd>
 			<dt><strong>Telefones:</strong></dt>
 				<dd>(81) 912345678</dd>
 				<dd>(81) 348386453</dd>
