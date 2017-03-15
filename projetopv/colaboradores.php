@@ -40,12 +40,12 @@
 				<img src="img/salatiel.jpg" alt="lights" style="width: 100%">
 			<div class="caption">
 				<h4>Web Design</h4>
-		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sala">Veja Mais</button> 
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sala">Veja Mais</button>
 			<div class="collapse card" id="sala">
 			Nome : Salatiel Gouveia<br>Idade : 19 anos<br>Função : Web Designer<br>Linguagem : HTML/CSS<br>
 			Descrição : Jogador de Basquete<br>
-			</div>	
-	
+			</div>
+
 			</div>
 			</div>
 			</div>
@@ -70,7 +70,7 @@
 				<div class="collapse card" id="lee">
 				Nome : Mauricio Lee<br>Idade : 18 anos<br>Função : Analista de Projeto e Pesquisador<br>Linguagem : HTML/CSS<br>Descrição : Praticar Ciclismo<br>
 				</div>
-		
+
 			</div>
 			</div>
 			</div>
@@ -97,7 +97,7 @@
 								<h4>Programador</h4>
 								<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#didi">Veja Mais</button>
 								<div class="collapse card" id="didi">
-								Nome : Dhiorgenes Santana<br>Idade : 19 anos<br>Função : Programador do PV<br>Linguagem : JAVA-HTML-CSS Front-end<br>Descrição : Academia e Crosfitness<br>  
+								Nome : Dhiorgenes Santana<br>Idade : 19 anos<br>Função : Programador do PV<br>Linguagem : JAVA-HTML-CSS Front-end<br>Descrição : Academia e Crosfitness<br>
 								</div>
 							</div>
 						</div>
@@ -123,12 +123,12 @@
 				<div class="collapse card" id="job">
 				Nome : Jobson José<br>Idade : 19 anos<br>Linguagem : HTML/CSS JAVA/ Front-end<br>Função : Programador do PV<br>Descrição : Lutador e Analista de Historias de Games<br>
 				</div>
-		
+
 				</div>
 			</div>
 		</div>
-	
-	
+
+
 
 
 
