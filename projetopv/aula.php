@@ -11,10 +11,15 @@
 	<body>
 		<?php include 'assets/menu.php';
 			?>
-			<center><video width="52%" height="52%" controls>
+			
+			<!--<center><video width="52%" height="52%" controls>
 				<source src="out-10.ogv" type="video/ogg">
 				<source src="out-10.mp4" type="video/mp4">		
-			</video></center>
+			</video></center-->
+
+			<center><iframe width="52%"" height="52%"
+				src="https://www.youtube.com/embed/UV47rNEgTAw">
+			</iframe></center>
 			
 			
 	</body>
