@@ -16,9 +16,25 @@
 				<source src="out-10.ogv" type="video/ogg">
 				<source src="out-10.mp4" type="video/mp4">
 			</video></center-->
+			<!-- <div class="container">
+				<div class="row">
+					<div class="thumbnail"> -->
+
 			<center><iframe width="52%"" height="52%"
 				src="https://www.youtube.com/embed/UV47rNEgTAw">
 			</iframe></center>
+
+				<!--<div class="caption">
+				<h5>Video Aula</h5>
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#videoaula">Acompanhe</button>
+				<div class="collapse card" id="videoaula">
+				Formulario || Roteiro do Video
+				Formulario || Roteiro do Video
+				</div>
+				</div>
+					</div>
+				</div>
+			</div>-->
 
 
 	</body>
