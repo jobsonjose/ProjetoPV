@@ -20,9 +20,16 @@
 				<div class="row">
 					<div class="thumbnail"> -->
 
-			<center><iframe width="52%"" height="52%"
+			<center><iframe width="45%"" height="45%"
 				src="https://www.youtube.com/embed/UV47rNEgTAw">
+			</iframe></center> <br>
+
+			<center><iframe width="45%"" height="45%"
+				src="https://www.youtube.com/embed/00LIR4b4-v8">
 			</iframe></center>
+
+			
+
 
 				<!--<div class="caption">
 				<h5>Video Aula</h5>
