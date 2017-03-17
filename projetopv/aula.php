@@ -21,14 +21,20 @@
 					<div class="thumbnail"> -->
 
 			<center><iframe width="45%"" height="45%"
-				src="https://www.youtube.com/embed/UV47rNEgTAw">
+				src="https://www.youtube.com/embed/00LIR4b4-v8"> 
 			</iframe></center> <br>
 
 			<center><iframe width="45%"" height="45%"
-				src="https://www.youtube.com/embed/00LIR4b4-v8">
+				src="https://www.youtube.com/embed/UV47rNEgTAw">
 			</iframe></center>
 
 			
+			<div class="center">
+				<p> Formulários: <br>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfA-TweX3GIMLjmS2T9IsL7xbnxfceObOPfDRMYuw5-ftmP6g/viewform">Tutorial CSS</a>
+				</p>
+			</div>
+
 
 
 				<!--<div class="caption">
