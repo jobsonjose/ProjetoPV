@@ -16,38 +16,35 @@
 				<source src="out-10.ogv" type="video/ogg">
 				<source src="out-10.mp4" type="video/mp4">
 			</video></center-->
-			<!-- <div class="container">
+			 <div class="container">
 				<div class="row">
-					<div class="thumbnail"> -->
-
-			<center><iframe width="45%"" height="45%"
-				src="https://www.youtube.com/embed/00LIR4b4-v8"> 
-			</iframe></center> <br>
-
-			<center><iframe width="45%"" height="45%"
+					<div class="col-md-6">
+					<div class="thumbnail"> 
+                <iframe width="100%" height="45%"
 				src="https://www.youtube.com/embed/UV47rNEgTAw">
-			</iframe></center>
-
-			
-			<div class="center">
-				<p> Formulários: <br>
-				<a href="https://goo.gl/forms/bkWFqog6Xilo3Xmi2">Tutorial CSS</a>
-				</p>
-			</div>
-
-
-
-				<!--<div class="caption">
+			</iframe>
+				<div class="caption">
 				<h5>Video Aula</h5>
-				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#videoaula">Acompanhe</button>
-				<div class="collapse card" id="videoaula">
-				Formulario || Roteiro do Video
-				Formulario || Roteiro do Video
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#videoaula2">Acompanhe</button>
+				<div class="collapse card" id="videoaula2">
+					<p> Formulários: <br>
+					<a href="https://goo.gl/forms/bkWFqog6Xilo3Xmi2">Tutorial CSS</a>
+				</p>
 				</div>
 				</div>
+				</div>
+				</div>
+					<div class="col-md-6">
+						<div class="thumbnail">
+							<iframe width="100%" height="45%"
+							src="https://www.youtube.com/embed/00LIR4b4-v8"> 
+							</iframe>
+						</div>
+						</div>
+					</div>
 					</div>
 				</div>
-			</div>-->
+			</div>
 
 
 	</body>
