@@ -31,7 +31,7 @@
 			
 			<div class="center">
 				<p> Formulários: <br>
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfA-TweX3GIMLjmS2T9IsL7xbnxfceObOPfDRMYuw5-ftmP6g/viewform">Tutorial CSS</a>
+				<a href="https://goo.gl/forms/bkWFqog6Xilo3Xmi2">Tutorial CSS</a>
 				</p>
 			</div>
 
