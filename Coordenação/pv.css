@@ -1,0 +1,39 @@
+.banner{
+	padding-bottom: 30px;
+	padding-top: 30px;
+	padding-right:500px;
+	padding-left:600px;
+	background-color:  green;
+	font-size: 20px;
+
+}.opcao{
+	
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-right:1240px;
+	margin-left:450px;
+			
+}p{
+	margin-left:500px;	
+	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-right:1250px;
+	padding: 10px;
+	border: #DCDCDC;
+	background-color: #DCDCDC;
+	border-top: 5px solid green;
+	
+}li{
+
+	border-bottom: 2px solid #DCDCDC;
+	
+}a{
+	text-decoration: none;	
+}.opcao2{
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-right:1240px;
+	margin-left:450px;
+}
