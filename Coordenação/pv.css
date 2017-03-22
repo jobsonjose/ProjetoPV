@@ -67,3 +67,25 @@
 	background: #AAA;
 	border-top: 5px solid green;
 }
+
+#floating-box {
+	background: green;
+	float: left;
+    display: block;
+    width: 720px;
+    height: 597px;
+    margin-right:  10%;
+    margin-top: 3%;
+    border: 3px solid #73AD21;  
+}
+
+.floating-box2{
+	background: grey;
+	 display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid red;  
+
+
+}
