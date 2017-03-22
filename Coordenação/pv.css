@@ -5,35 +5,65 @@
 	padding-left:600px;
 	background-color:  green;
 	font-size: 20px;
+	margin-bottom: 50px;
 
 }.opcao{
 	
 	padding: 10px;
-	margin-bottom: 20px;
-	margin-top: 10px;
-	margin-right:1240px;
-	margin-left:450px;
+	margin-bottom: 10px;
+	/*margin-top: 10px;*/
+	/*margin-right:1240px;*/
+	/*margin-left:450px;*/
 			
 }p{
-	margin-left:500px;	
+	/*margin-left:500px;	*/
 	margin-bottom: 10px;
 	margin-top: 20px;
-	margin-right:1250px;
+	/*margin-right:1250px;*/
 	padding: 10px;
 	border: #DCDCDC;
 	background-color: #DCDCDC;
 	border-top: 5px solid green;
+	padding-bottom:35px;
+
 	
 }li{
 
 	border-bottom: 2px solid #DCDCDC;
+	margin-bottom: 15px;
 	
 }a{
 	text-decoration: none;	
 }.opcao2{
 	padding: 10px;
+	padding-bottom: 10px;
 	margin-bottom: 20px;
 	margin-top: 10px;
-	margin-right:1240px;
-	margin-left:450px;
+	/*margin-right:1240px;*/
+	/*margin-left:450px;*/
+}
+#nome{
+
+}
+
+
+.main {
+	width: 1200px;
+	margin: auto;
+}
+
+.menu {
+	float: left;
+	width: 30%;
+	margin-right: 10%;
+}
+.content {
+	float: left;
+	width: 60%;
+}
+
+.content .title {
+	padding: 10px 10px 40px;
+	background: #AAA;
+	border-top: 5px solid green;
 }
