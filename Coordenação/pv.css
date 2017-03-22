@@ -15,7 +15,8 @@
 	/*margin-right:1240px;*/
 	/*margin-left:450px;*/
 			
-}p{
+}
+#letra{
 	/*margin-left:500px;	*/
 	margin-bottom: 10px;
 	margin-top: 20px;
@@ -68,6 +69,22 @@
 	border-top: 5px solid green;
 }
 
+.dropdown{
+	display: inline-block;
+	position: relative;
+}
+.dropdown-barra{
+	display: none; 
+	z-index: 1;
+	min-width: 160px;
+	position: absolute;
+	background-color: #f9f9f9;
+	padding:12px 16px;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+}
+.dropdown:hover .dropdown-barra{
+	display: block;
+}
 #floating-box {
 	background: green;
 	float: left;
@@ -80,12 +97,12 @@
 }
 
 .floating-box2{
-	background: grey;
+	background: #DCDCDC;
 	 display: inline-block;
     width: 150px;
     height: 75px;
     margin: 10px;
-    border: 3px solid red;  
+    border: 1px solid #DCDCDC ;  
 
 
 }
