@@ -20,7 +20,6 @@
 				<label for="date">Email:</label><br>
 					<input type="email" name="email"/> 
 				<select name="tipo" id="selct-tipo">
-					<option value="">Função</option>
 					<option value="professor">Professor</option>
 					<option value="servidor">Servidor</option>
 					<option value="aluno">Aluno</option>
