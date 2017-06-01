@@ -4,8 +4,11 @@
 	$nome = $_POST['nome'];
 	$email = $_POST['email'];
 	$matricula = $_POST['matricula'];
-	$funcao = $_POST['tipo'];
-		$ret = $pdo->exec("INSERT INTO ps_user (user_name, user_email, user_matricula, user_tipo) VALUES('$nome', '$email', '$matricula', '$funcao')");
+	$funcao = strtoupper($_POST['tipo']);
+		if ($funcao == "ALUNO") {
+			$ret = $pdo->exec("INSERT INTO PS_ALUNO () ");
+			
+		}
 		if (!$ret) {
 			print_r($pdo->errorInfo());
 

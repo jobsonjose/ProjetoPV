@@ -1,7 +1,7 @@
 		<?php  
 		require_once 'conexao.php';
-		$ret = $pdo->query("SELECT user_name, user_matricula, user_email FROM ps_user ");
-		$result = $ret->fetchAll();
+		//$ret = $pdo->query("SELECT user_name, user_matricula, user_email FROM ps_user ");
+		//$result = $ret->fetchAll();
 		//echo "<pre>";
 		//var_dump($result);
 		//echo "</pre>";
