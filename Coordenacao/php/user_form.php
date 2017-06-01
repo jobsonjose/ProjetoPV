@@ -1,6 +1,11 @@
 		<?php  
 		require_once 'conexao.php';
-		$ret = $pdo->query("SELECT * FROM")
+		$ret = $pdo->query("SELECT user_name, user_matricula, user_email FROM ps_user ");
+		$result = $ret->fetchAll();
+		//echo "<pre>";
+		//var_dump($result);
+		//echo "</pre>";
+		
 		?>
 
 <!DOCTYPE html> 
@@ -43,6 +48,18 @@
 				</tr>
 				<tr> 
 					 <th>Nome </th> <th>Matricula</th> <th>Email</th>
+				</tr>
+				
+					<?php 
+						for ($i=0; $i < count($result) ; $i++) { 
+							echo "<tr>";
+							echo "<td>". $result[$i]["user_name"]."</td>";
+							echo "<td>". $result[$i]["user_matricula"]."</td>";
+							echo "<td>". $result[$i]["user_email"]."</td>";
+							echo "</tr>";
+						}
+					 ?>
+					 
 		<?php include 'footer.php' ?>
 	</body>
 </html>

@@ -51,11 +51,12 @@ CREATE TABLE `ps_reg_falta` (
 --
 
 CREATE TABLE `ps_user` (
-  `user_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(100) NOT NULL,
   `user_email` varchar(60) NOT NULL,
   `user_matricula` varchar(15) NOT NULL,
-  `user_tipo` enum('aluno','professor','funcionario') NOT NULL
+  `user_tipo` enum('aluno','professor','funcionario') NOT NULL,
+  CONSTRAINT `user_pk` PRIMARY KEY (`user_id`) 
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -80,7 +81,6 @@ ALTER TABLE `ps_reg_falta`
 -- Indexes for table `ps_user`
 --
 ALTER TABLE `ps_user`
-  ADD PRIMARY KEY AUTO_INCREMENT(`user_id`),
   ADD UNIQUE KEY `user_email` (`user_email`),
   ADD UNIQUE KEY `user_matricula` (`user_matricula`);
 
