@@ -1,3 +1,7 @@
+		<?php  
+		require_once 'conexao.php';
+		$ret = $pdo->query("SELECT * FROM")
+		?>
 
 <!DOCTYPE html> 
 <html>
@@ -38,7 +42,7 @@
 					<th colspan="5">user</th>
 				</tr>
 				<tr> 
-					 <th>Nome </th> <th>Disciplina</th> <th>Email</th>
+					 <th>Nome </th> <th>Matricula</th> <th>Email</th>
 		<?php include 'footer.php' ?>
 	</body>
 </html>
