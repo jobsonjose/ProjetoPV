@@ -1,6 +1,6 @@
 		<?php
 		require_once 'conexao.php';
-		$ret = $pdo->query("SELECT * FROM ps_aluno ");
+		$ret = $pdo->query("SELECT * FROM PS_ALUNO ");
 		$result = $ret->fetchAll();
 		?>
 
