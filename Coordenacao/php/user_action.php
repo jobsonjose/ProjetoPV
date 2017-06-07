@@ -9,7 +9,7 @@
 
 			$ret = $pdo->exec("INSERT INTO PS_ALUNO (ALN_NOME, ALN_EMAIL, ALN_MATRICULA) VALUES ('$nome', '$email', '$matricula')");
 			var_dump($ret);
-
+			print_r($pdo->errorInfo());
  			//header("Location: {$_SERVER['HTTP_REFERER']}");
 
 		}elseif ($funcao == "SERVIDOR") {
@@ -39,11 +39,11 @@
 			<?php
 			if ($ret > 0) {
 			        echo "<div  id='center' class='alert alert-success'>";
-			        echo "Editado com <strong>Sucesso</strong>";
+			        echo "Cadastro realizado com s <strong>Sucesso</strong>";
 			        echo "</div>";
 			    } else {
 			        echo "<div  id='center' class='alert alert-danger'>";
-			        echo "Ocorreu Algum Erro na edição por favor<strong>Tente Novamente </strong>";
+			        echo "Email já cadastrado ou senha <strong>Tente Novamente </strong>";
 			        echo "</div>";
 			 }
 			 ?>
