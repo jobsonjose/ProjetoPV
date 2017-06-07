@@ -1,6 +1,6 @@
 	<?php
 	require_once 'conexao.php';
-	$ret = $pdo->query("SELECT  FAL_CURSO, FAL_ALN_MATRICULA, FAL_DATA_INICIAL, FAL_DURACAO FROM  PS_FALTAS_ALUNOS ");
+	$ret = $pdo->query("SELECT  FAL_CURSO, FAL_USER_MATRICULA, FAL_DATA_INICIAL, FAL_DURACAO FROM  PS_FALTAS_ALUNOS ");
 	$result = $ret->fetchAll();
 	//echo "<pre>";
 	//var_dump($result);

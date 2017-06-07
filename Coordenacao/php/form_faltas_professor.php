@@ -1,6 +1,6 @@
 	<?php
 		require_once 'conexao.php';
-		$ret = $pdo->query("SELECT FAP_ALN_MATRICULA, FAP_DATA, FAP_HORARIO, FAP_DIS FROM PS_FALTAS_PROFESSOR ");
+		$ret = $pdo->query("SELECT FAP_USER_MATRICULA, FAP_DATA, FAP_HORARIO, FAP_DIS FROM PS_FALTAS_PROFESSOR ");
 		$result = $ret->fetchAll();
 		//echo "<pre>";
 		//echo var_dump($result);

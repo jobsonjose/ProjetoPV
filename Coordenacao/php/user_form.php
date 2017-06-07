@@ -1,6 +1,6 @@
 		<?php
 		require_once 'conexao.php';
-		$ret = $pdo->query("SELECT * FROM PS_ALUNO ");
+		$ret = $pdo->query("SELECT * FROM PS_USER");
 		$result = $ret->fetchAll();
 		?>
 
@@ -44,9 +44,9 @@
 				foreach($result as $key => $value):
 					?>
 				<tr>
-					<td><?=$value["ALN_NOME"]?></td>
-					<td><?=$value["ALN_MATRICULA"]?></td>
-					<td><?=$value["ALN_EMAIL"]?></td>
+					<td><?=$value["USER_NOME"]?></td>
+					<td><?=$value["USER_MATRICULA"]?></td>
+					<td><?=$value["USER_EMAIL"]?></td>
 					<td><a href="edit.php?id=$key">Editar</a></td>
 					<td><a href="delete.php?id=$key">Excluir</a></td>
 				</tr>
