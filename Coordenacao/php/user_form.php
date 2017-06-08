@@ -1,9 +1,3 @@
-		<?php
-		require_once 'conexao.php';
-		$ret = $pdo->query("SELECT * FROM PS_USER");
-		$result = $ret->fetchAll();
-		?>
-
 		<!DOCTYPE html>
 		<html>
 		<head>
@@ -32,27 +26,6 @@
 					<input type="submit" value="Enviar" id="btnSalvar" name="submit"/>
 				</form>
 			</div>
-
-			<table id="tblListar">
-				<tr>
-					<th colspan="5">user</th>
-				</tr>
-				<tr>
-					<th>Nome</th> <th>Matricula</th> <th>Email</th>
-				</tr>
-				<?php
-				foreach($result as $key => $value):
-					?>
-				<tr>
-					<td><?=$value["USER_NOME"]?></td>
-					<td><?=$value["USER_MATRICULA"]?></td>
-					<td><?=$value["USER_EMAIL"]?></td>
-					<td><a href="edit.php?id=$key">Editar</a></td>
-					<td><a href="delete.php?id=$key">Excluir</a></td>
-				</tr>
-
-			<?php endforeach;?>
-		</table>
 
 		<?php include 'footer.php' ?>
 	</body>

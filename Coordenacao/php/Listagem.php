@@ -5,6 +5,11 @@
 
         $rot = $pdo->query("SELECT * FROM PS_USER");
         $value = $rot->fetchAll();
+
+        $root = $pdo->query("SELECT USER_NOME FROM PS_USER");
+        $up = $root->fetchAll();
+        $reet = $pdo->query("SELECT   FAL_CURSO, FAL_USER_MATRICULA, FAL_DATA_INICIAL, FAL_DURACAO FROM  PS_FALTAS_ALUNOS ");
+        $resultado = $reet->fetchAll();
         ?>
     
 <!DOCTYPE html>
@@ -49,7 +54,7 @@
         <br>
         <table id="tblListar">
                 <tr>
-                    <th colspan="5">user</th>
+                    <th colspan="5">Usuário</th>
                 </tr>
                 <tr>
                     <th>Nome</th> <th>Matricula</th> <th>Email</th>
@@ -66,6 +71,35 @@
                 </tr>
 
             <?php endforeach;?>
+        </table>
+        <br>
+                <table id="tblListar">
+            <thead>
+                <tr>
+                    <th colspan="5">Justificar Falta Aluno </th>
+                </tr>
+                <tr>
+                    <th>Nome</th> <th>Curso</th> <th>Matricula</th> <th>Data Inicial</th> <th>Quantidade de Dias</th>
+                </tr>
+            </thead>
+            <tbody id="corpo">
+                <?php
+                    for ($i=0; $i < count($resultado) ; $i++) {
+                        echo "<tr>";
+                        //echo "<td>". NULL."</td>";
+
+                        echo "<td>". $up[$i]["USER_NOME"]."</td>";
+                        echo "<td>". $resultado[$i]["FAL_CURSO"]."</td>";
+                        echo "<td>". $resultado[$i]["FAL_USER_MATRICULA"]."</td>";
+                        echo "<td>". $resultado[$i]["FAL_DATA_INICIAL"]."</td>";
+                        echo "<td>". $resultado[$i]["FAL_DURACAO"]."</td>";
+                        echo "</tr>";
+
+                    }
+                ?>
+
+
+            </tbody>
         </table>
 
 

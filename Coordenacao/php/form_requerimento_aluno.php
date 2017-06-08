@@ -1,13 +1,3 @@
-	<?php
-	require_once 'conexao.php';
-	$rot = $pdo->query("SELECT USER_NOME FROM PS_USER");
-	$up = $rot->fetchAll();
-	$ret = $pdo->query("SELECT   FAL_CURSO, FAL_USER_MATRICULA, FAL_DATA_INICIAL, FAL_DURACAO FROM  PS_FALTAS_ALUNOS ");
-	$result = $ret->fetchAll();
-	//echo "<pre>";
-	//var_dump($result);
-	//echo "</pre>";
-	 ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -36,35 +26,7 @@
 				<input type="submit" value="Enviar" id="btnSalvar" name="submit"/>
 			</form>
 		</div>
-
-		<table id="tblListar">
-			<thead>
-				<tr>
-					<th colspan="5">Justificar Falta Aluno </th>
-				</tr>
-				<tr>
-					<th>Nome</th> <th>Curso</th> <th>Matricula</th> <th>Data Inicial</th> <th>Quantidade de Dias</th>
-				</tr>
-			</thead>
-			<tbody id="corpo">
-				<?php
-					for ($i=0; $i < count($result) ; $i++) {
-						echo "<tr>";
-						//echo "<td>". NULL."</td>";
-
-						echo "<td>". $up[$i]["USER_NOME"]."</td>";
-						echo "<td>". $result[$i]["FAL_CURSO"]."</td>";
-						echo "<td>". $result[$i]["FAL_USER_MATRICULA"]."</td>";
-						echo "<td>". $result[$i]["FAL_DATA_INICIAL"]."</td>";
-						echo "<td>". $result[$i]["FAL_DURACAO"]."</td>";
-						echo "</tr>";
-
-					}
-				?>
-
-
-			</tbody>
-		</table>
+		
 		<?php include 'php/footer.php' ?>
 	</body>
 </html>
