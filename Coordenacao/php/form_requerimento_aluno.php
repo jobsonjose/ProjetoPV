@@ -1,6 +1,8 @@
 	<?php
 	require_once 'conexao.php';
-	$ret = $pdo->query("SELECT  FAL_CURSO, FAL_USER_MATRICULA, FAL_DATA_INICIAL, FAL_DURACAO FROM  PS_FALTAS_ALUNOS ");
+	$rot = $pdo->query("SELECT USER_NOME FROM PS_USER");
+	$up = $rot->fetchAll();
+	$ret = $pdo->query("SELECT   FAL_CURSO, FAL_USER_MATRICULA, FAL_DATA_INICIAL, FAL_DURACAO FROM  PS_FALTAS_ALUNOS ");
 	$result = $ret->fetchAll();
 	//echo "<pre>";
 	//var_dump($result);
@@ -48,10 +50,11 @@
 				<?php
 					for ($i=0; $i < count($result) ; $i++) {
 						echo "<tr>";
-						echo "<td>". NULL."</td>";
+						//echo "<td>". NULL."</td>";
 
+						echo "<td>". $up[$i]["USER_NOME"]."</td>";
 						echo "<td>". $result[$i]["FAL_CURSO"]."</td>";
-						echo "<td>". $result[$i]["FAL_ALN_MATRICULA"]."</td>";
+						echo "<td>". $result[$i]["FAL_USER_MATRICULA"]."</td>";
 						echo "<td>". $result[$i]["FAL_DATA_INICIAL"]."</td>";
 						echo "<td>". $result[$i]["FAL_DURACAO"]."</td>";
 						echo "</tr>";

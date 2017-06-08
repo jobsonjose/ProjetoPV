@@ -46,7 +46,7 @@
 					for ($i=0; $i <count($result) ; $i++) {
 						echo "<tr>";
 						echo "<td>". $result[$i]["FAP_DIS"]."</td>";
-						echo "<td>". $result[$i]["FAP_ALN_MATRICULA"]."</td>";
+						echo "<td>". $result[$i]["FAP_USER_MATRICULA"]."</td>";
 						echo "<td>". $result[$i]["FAP_DATA"]."</td>";
 						echo "<td>". $result[$i]["FAP_HORARIO"]."</td>";
 						echo "<td>". Null."</td>";

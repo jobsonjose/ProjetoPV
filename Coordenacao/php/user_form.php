@@ -19,7 +19,7 @@
 				<h2>Cadastro de Usuário</h2>
 				<form action="user_action.php" method="post" >
 					<label for="nome">Nome</label>
-					<input type="text" name="nome"/>
+					<input type="text" name="nome" />
 					<label for="aluno">Matrícula</label>
 					<input type="text" name="matricula"/>
 					<label for="date">Email:</label><br>
