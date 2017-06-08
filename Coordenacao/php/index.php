@@ -10,7 +10,7 @@
         <body>
             <?php include 'menulateral.php'; ?>
         <div class="formulario">
-        <form action="" method="post">
+        <form action="login.php" method="post">
         <h2>Login:</h2>
                 <label>Matrícula:</label>
                 <input type="text" name="matricula"><br>
