@@ -1,11 +1,12 @@
     <?php
-        require_once 'conexao.php';
+        include 'conexao.php';
         $ret = $pdo->query("SELECT FAP_USER_MATRICULA, FAP_DATA, FAP_HORARIO, FAP_DIS FROM PS_FALTAS_PROFESSOR ");
         $result = $ret->fetchAll();
-        //echo "<pre>";
-        //echo var_dump($result);
-        //echo "</pre>";
-         ?>
+
+        $rot = $pdo->query("SELECT * FROM PS_USER");
+        $value = $rot->fetchAll();
+        ?>
+    
 <!DOCTYPE html>
     <html>
     <head>
@@ -45,6 +46,28 @@
 
             </tbody>
         </table>
+        <br>
+        <table id="tblListar">
+                <tr>
+                    <th colspan="5">user</th>
+                </tr>
+                <tr>
+                    <th>Nome</th> <th>Matricula</th> <th>Email</th>
+                </tr>
+                <?php
+                foreach($value as $key => $value):
+                    ?>
+                <tr>
+                    <td><?=$value["USER_NOME"]?></td>
+                    <td><?=$value["USER_MATRICULA"]?></td>
+                    <td><?=$value["USER_EMAIL"]?></td>
+                    <td><a href="edit.php?id=$key">Editar</a></td>
+                    <td><a href="delete.php?id=$key">Excluir</a></td>
+                </tr>
+
+            <?php endforeach;?>
+        </table>
+
 
 
     </body>
