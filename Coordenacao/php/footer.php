@@ -1,1 +1,2 @@
-<?php include 'estilos.php' ?>
+<?php include 'estilos.php'
+?>

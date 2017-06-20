@@ -3,12 +3,14 @@
 	<head>
 		<title>Coordenação do Curso Técnico em Informática para Internet - IFPE -Campus Igarassu</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-
-		<?php include 'estilos.php'; ?>
+		<?php include 'estilos.php';
+		?>
 
 	</head>
 	<body>
-		<?php include 'menulateral.php'; ?>
+	<?php include 'menulateral.php';
+	?>
+
 		<div class="formulario">
 			<h2>Registro de Falta de Professor</h2>
 			<form action="cadastrar_professor.php" method="post" >
@@ -20,11 +22,11 @@
 					<input type="date" name="dataaula"/>
 				<br><label for="hora">Horario :<br></label>
 					<input type="time" name="horario"/><br>
-				<input type="submit" value="Enviar" id="btnSalvar" name="submit"/>
+				<input type="submit" value="Enviar" name="submit"/>
 			</form>
 		</div>
+	<?php include 'php/footer.php'
+	?>
 
-
-		<?php include 'php/footer.php' ?>
 	</body>
 </html>

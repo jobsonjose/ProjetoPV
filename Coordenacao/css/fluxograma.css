@@ -1,33 +1,31 @@
 section {
+
 	margin-right: 10%;
 	margin-left: 0;
 	width: 60%;
 	float: left;
-
 }
-
 .coluna{
+
 	width: 33%;
 	float: left;
-
 }
 .title {
-	
-	
+		
 	font-size:200%;
 	font-family: helvetica;
 	text-align: center;
 	color: green;
 	width: 100%;
 }
-
-
 .dropdown {
+
 	display: inline-block;
 	position: relative;
 	width: 98%;
 }
 .dropdown-barra {
+
 	border-radius: 25%;
 	display: none;
 	z-index: 1;
@@ -38,16 +36,17 @@ section {
 	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
 }
 .dropdown:hover .dropdown-barra {
+
 	display: block;
 }
 #floating-box {
+
 	background: #9ACD32;
 	width: 100%;
 	height: auto;
 	margin: -1px;
 	border: none;
 	float: right;
-
 }
 .floating-box-assuntos {
 
@@ -65,23 +64,23 @@ section {
     overflow: hidden;
    	vertical-align: 100%;
 }
-
 .floating-box-assuntos a{
+
 	text-decoration: none;
 	color: black;
 	float: none;
 	width: 50%;
 	margin-left: 1%;
 }
-
 .floating-box-assuntos a p{
+
 	position: absolute;
 	top: 50%;
 	display: table-cell;
 	vertical-align: middle;
 }
-
 .floating-box-periodo {
+
    background:#cc3333;
    display: inline-block;
    width: 100%;
@@ -92,10 +91,8 @@ section {
    color: white;
 }
 @media only screen and (max-width: 1100px){
+
 	.floating-box-assuntos a{
 		font-size: 1.5vw;
-
-
 	}
-
 }
