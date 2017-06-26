@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$dbname = "portal_servidor";
 	$host = "localhost";
 	$user = "root";
@@ -6,5 +6,5 @@
 
 	$dsn = "mysql:dbname=$dbname;host=$host";
 
-	$pdo= new PDO($dsn, $user);
+	$pdo= new PDO($dsn, $user,$pass);
 ?>

@@ -1,3 +1,21 @@
+<?php
+	session_start();
+	if (isset($_SESSION['cadastro'])) {
+ 	?>
+ 	<div class="alert alert-success" id="center">Cadastro realizado com <strong>Sucesso</strong></div>
+<?php
+	session_destroy();
+	}
+	if (isset($_SESSION['erro'])) {
+
+ ?>
+	<div class="alert alert-danger" id="center">Erro ao tentar Cadastar, <strong>Por favor Tente mais tarde</strong></div>
+<?php
+	session_destroy();
+	}
+ ?>
+
+
 <!DOCTYPE html>
 <html>
 	<head>
