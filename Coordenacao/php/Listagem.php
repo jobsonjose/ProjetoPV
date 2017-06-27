@@ -66,8 +66,8 @@
                 <td><?=$value["USER_NOME"]?></td>
                 <td><?=$value["USER_MATRICULA"]?></td>
                 <td><?=$value["USER_EMAIL"]?></td>
-                <td><a href="edit.php?id=$key">Editar</a></td>
-                <td><a href="delete.php?id=$key">Excluir</a></td>
+                <td><a href="edit.php?id=<?=$key?>">Editar</a></td>
+                <td><a href="delete.php?id=<?=$value['USER_ID']?>">Excluir</a></td>
             </tr>
             <?php endforeach;
             ?>
