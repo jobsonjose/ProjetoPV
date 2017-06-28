@@ -12,6 +12,22 @@
 	?>
 
 		<div class="formulario">
+<?php
+	session_start();
+	if (isset($_SESSION['cadastro'])) {
+ 	?>
+ 	<div class="alert alert-success" id="center">Requerimento Realizado com <strong>Sucesso</strong> <button id="confirm" class="btn btn-lok">X</button></div>
+<?php
+	session_destroy();
+	}
+	if (isset($_SESSION['erro'])) {
+
+ ?>
+	<div class="alert alert-danger" id="center"><?= $_SESSION['erro']; ?>,<strong>Por favor Tente novamente</strong> <button id="confirm" class="btn btn-lok">X</button></div>
+<?php
+	session_destroy();
+	}
+ ?>
 			<h2>Registro de Falta de Professor</h2>
 			<form action="cadastrar_professor.php" method="post" >
 				<label for="disci">Disciplina</label>
@@ -27,6 +43,10 @@
 		</div>
 	<?php include 'php/footer.php'
 	?>
-
+	<script>
+	$("#confirm").click(function() {
+		$("#center").hide();
+	});
+	</script>
 	</body>
 </html>
