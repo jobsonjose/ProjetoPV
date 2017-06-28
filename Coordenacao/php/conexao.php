@@ -6,5 +6,5 @@
 
 	$dsn = "mysql:dbname=$dbname;host=$host;port=13306";
 
-	$pdo= new PDO($dsn, $user);
+	$pdo= new PDO($dsn, $user, $pass);
 ?>

@@ -1,3 +1,19 @@
+<?php
+	session_start();
+	if (isset($_SESSION['cadastro'])) {
+ 	?>
+ 	<div class="alert alert-success" id="center">Requerimento Realizado com <strong>Sucesso</strong></div>
+<?php
+	session_destroy();
+	}
+	if (isset($_SESSION['erro'])) {
+
+ ?>
+	<div class="alert alert-danger" id="center">Erro ao tentar fazer o Requerimento,<strong>Por favor Tente mais tarde</strong></div>
+<?php
+	session_destroy();
+	}
+ ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -26,7 +42,7 @@
 					<input type="file" name="arquivo">
 				<input type="submit" value="Enviar" name="submit"/>
 			</form>
-		</div>		
+		</div>
 		<?php include 'php/footer.php'
 		?>
 
