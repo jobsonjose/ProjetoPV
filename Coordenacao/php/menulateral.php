@@ -3,10 +3,11 @@
         <center><h1><a href="http://www.ifpe.edu.br/">Instituto Federal de Pernambuco</a></h1></center>
         <nav id="menu">
             <ul style="list-style-type:none">
-                <li><a href="index.php"> <i class="fa fa-home"></i> Início | </a></li>
+                <li><a href="home.php"> <i class="fa fa-home"></i> Início | </a></li>
                 <li><a href="fluxograma_ipi.php"> <i class="fa fa-th-large"></i> Grade Curricular | </a></li>
                 <li><a href="http://www.ifpe.edu.br/campus"><i class="fa fa-map-marker" ></i> Campi | </a></li>
                 <li><a href="https://www.ifpe.edu.br/contato/contatos-telefonicos-ifpe-23ago-1.pdf"> <i class="fa fa-address-book"></i> Contato | </a></li>
+                <li><a href="index.php"> Login |</li>
              </ul>
         </nav>
 </header>

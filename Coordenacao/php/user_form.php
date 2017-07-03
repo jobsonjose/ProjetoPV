@@ -4,7 +4,6 @@
  	?>
  	<div class="alert alert-success" id="center">Cadastro realizado com <strong>Sucesso</strong></div>
 <?php
-	session_destroy();
 	}
 	if (isset($_SESSION['erro'])) {
 
@@ -33,11 +32,15 @@
 			<h2>Cadastro de Usuário</h2>
 			<form action="user_action.php" method="post" >
 				<label for="nome">Nome</label>
-				<input type="text" name="nome" />
+				<input type="text" name="nome">
+				<label for="nome">Login</label>
+				<input type="text" name="login">
 				<label for="aluno">Matrícula</label>
-				<input type="text" name="matricula"/>
-				<label for="date">Email:</label><br>
-				<input type="email" name="email"/>
+				<input type="text" name="matricula">
+				<label for="date">Email:</label>
+				<input type="email" name="email">
+				<label for="senha">Senha</label>
+				<input type="password" name="senha">
 				<select name="tipo">
 					<option value="professor">Professor</option>
 					<option value="servidor">Servidor</option>

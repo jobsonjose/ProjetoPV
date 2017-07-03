@@ -4,7 +4,7 @@
 	$user = "root";
 	$pass = "123456";
 
-	$dsn = "mysql:dbname=$dbname;host=$host;port=13306";
+	$dsn = "mysql:dbname=$dbname;host=$host;";
 
-	$pdo= new PDO($dsn, $user, $pass);
+	$pdo= new PDO($dsn, $user);
 ?>
