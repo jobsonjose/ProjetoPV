@@ -14,7 +14,6 @@
 
         <div class="formulario">
         <?php
-        session_start();
         if(isset($_SESSION['error'] )){
             ?>
         <div class="alert alert-danger" id="center">Erro ao tentar Logar, <strong>Por favor Tente mais tarde</strong></div>

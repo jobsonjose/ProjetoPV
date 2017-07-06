@@ -10,7 +10,6 @@
     </head>
     <body>    
                     <?php 
-                        session_start();
                         if(isset($_SESSION['alert'])){
                             ?>
                 <div class="alert alert-success" id="center"><i class="fa fa-envelope-open"> Bem-vindo <?= $_SESSION['tipo']; ?>, Tudo bem <strong><?= $_SESSION['user']?></strong> ? <button class="btn btn-danger" id="cancelar">X</button></i></div>

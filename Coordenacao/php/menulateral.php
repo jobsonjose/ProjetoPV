@@ -33,7 +33,6 @@
                 <?php 
     }else{
         require 'conexao.php';
-        session_start();
         ?>
             <li><a href="perfil.php"><?= $_SESSION['user'];?>..</a></li>
             <li><a href="logout.php">Sair</a></li>
@@ -49,7 +48,6 @@
                         <li><a href="form_faltas_professor.php">Formulário de Falta dos Professores</a></li>
                         <li><a href="fluxograma_ipi.php">Grade Curricular </a></li>
                     <?php 
-                        session_start();
                         if($_SESSION['tipo'] == "Servidor"){
                             ?> 
                             <li><a href="Listagem.php">Listagem </a></li>
