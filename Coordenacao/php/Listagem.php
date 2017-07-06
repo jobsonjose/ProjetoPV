@@ -105,6 +105,12 @@
             </tbody>
         </table>
     </body>
+    <?php
+        if(isset($_SESSION['edite_user'])){
+            unset($_SESSION['edite_user']);
+        }
+     ?>
+
     <script>
         $(".delete")click(function(evt){
              if (!confirm('Tem certeza que deseja remover?')) {

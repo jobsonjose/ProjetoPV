@@ -8,9 +8,10 @@
             $matricula = $_POST['matricula'];
 
         $stmt = $pdo->prepare("UPDATE PS_USER SET USER_NOME = ?, USER_MATRICULA = ? WHERE USER_ID = ?");
-        $stmt = $pdo->exec("UPDATE PS_USER SET USER_NOME = '$nome' USER_MATRICULA = '$matricula' where USER_ID = '$id'");
+        $stmt = $pdo->exec("UPDATE PS_USER SET USER_NOME = '$nome', USER_MATRICULA = '$matricula' where USER_ID = '$id'");
         
         if(count($stmt) > 0){
+            unset($_SESSION['edite_user']);
              header("location: Listagem.php");
 
         }else{
@@ -19,7 +20,6 @@
 
     }
 
-            unset($_SESSION['edite_user']);
     $id = $_GET['id'];
 
     $stmt = $pdo->prepare("SELECT * FROM PS_USER where USER_ID = ?");
@@ -31,7 +31,6 @@
 
     include 'estilos.php';
     include 'menulateral.php';
-
     $_SESSION['edite_user'] = $id;
 ?>
     <meta charset="utf-8">
