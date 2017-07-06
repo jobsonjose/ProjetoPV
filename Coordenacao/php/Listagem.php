@@ -58,6 +58,8 @@
                 <th>Nome</th>
                 <th>Matricula</th>
                 <th>Email</th>
+                <th>Edite</th>
+                <th>Delete</th>
             </tr>
             <?php
                 foreach($value as $key => $value):
@@ -66,8 +68,8 @@
                 <td><?=$value["USER_NOME"]?></td>
                 <td><?=$value["USER_MATRICULA"]?></td>
                 <td><?=$value["USER_EMAIL"]?></td>
-                <td><a href="edit.php?id=<?=$key?>">Editar</a></td>
-                <td><a href="delete.php?id=<?=$value['USER_ID']?>">Excluir</a></td>
+                <td><a class="fa fa-clone" href="edit_user.php?id=<?=$value["USER_ID"]?>"></a></td>
+                <td><a id="delete" class="fa fa-window-close" href="delete_user.php?id=<?=$value["USER_ID"]?>"></a></td>
             </tr>
             <?php endforeach;
             ?>
@@ -103,4 +105,11 @@
             </tbody>
         </table>
     </body>
+    <script>
+        $(".delete")click(function(evt){
+             if (!confirm('Tem certeza que deseja remover?')) {
+                evt.preventDefault();
+            }
+        })
+    </script>
 </html>

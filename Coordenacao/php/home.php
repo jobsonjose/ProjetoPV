@@ -9,12 +9,28 @@
 
     </head>
     <body>    
+                    <?php 
+                        session_start();
+                        if(isset($_SESSION['alert'])){
+                            ?>
+                <div class="alert alert-success" id="center"><i class="fa fa-envelope-open"> Bem-vindo <?= $_SESSION['tipo']; ?>, Tudo bem <strong><?= $_SESSION['user']?></strong> ? <button class="btn btn-danger" id="cancelar">X</button></i></div>
+
+                    <?php 
+                        unset($_SESSION['alert']);
+                        }
+                    ?>
         <?php include 'menulateral.php';
         ?>
 
         <section style="min-height: 500px;">               
+            
         </section>
-        <!--?php include 'php/footer.php' ?-->
+        <?php include 'footer.php'; ?>
 
     </body>
+    <script>
+        $("#cancelar").click(function(){
+            $("#center").hide();
+        })
+    </script>
 </html>
