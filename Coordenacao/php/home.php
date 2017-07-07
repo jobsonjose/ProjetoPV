@@ -9,6 +9,8 @@
 
     </head>
     <body>    
+        <?php include 'menulateral.php';
+        ?>
                     <?php 
                         if(isset($_SESSION['alert'])){
                             ?>
@@ -18,8 +20,6 @@
                         unset($_SESSION['alert']);
                         }
                     ?>
-        <?php include 'menulateral.php';
-        ?>
 
         <section style="min-height: 500px;">               
             

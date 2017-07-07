@@ -12,10 +12,14 @@
     if(!isset($_SESSION['user'])){
 
 ?>
-                <li><a class="fa fa-id-card-o" href="user_form.php"> Sign Up</a></li>
-                <li><a class="fa fa-user-o" href="index.php"> Login</a></li>
+                <li><a class="btn btn-inverse" href="#" data-toggle="modal" data-target="#cadastro"><i class="fa fa-user-o"> Sign Up</i></a></li>
+                <li><a class="btn btn-inverse" href="#" data-toggle="modal" data-target="#login" ><i class="fa fa-user"> Login</i></a></li>
                 </ul>
             </nav>
+            <?php 
+                include 'modal_login.php';
+                include 'modal_cadastro_user.php';
+            ?>
     </header>
     <aside>
         <div class="menu">
