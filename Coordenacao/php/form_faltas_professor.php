@@ -13,19 +13,18 @@
 
 		<div class="formulario">
 <?php
-	session_start();
 	if (isset($_SESSION['cadastro'])) {
  	?>
  	<div class="alert alert-success" id="center">Requerimento Realizado com <strong>Sucesso</strong> <button id="confirm" class="btn btn-lok">X</button></div>
 <?php
-	session_destroy();
+	unset($_SESSION['cadastro']);
 	}
 	if (isset($_SESSION['erro'])) {
 
  ?>
 	<div class="alert alert-danger" id="center"><?= $_SESSION['erro']; ?>,<strong>Por favor Tente novamente</strong> <button id="confirm" class="btn btn-lok">X</button></div>
 <?php
-	session_destroy();
+	unset($_SESSION['erro']);
 	}
  ?>
 			<h2>Registro de Falta de Professor</h2>
@@ -41,8 +40,8 @@
 				<input type="submit" value="Enviar" name="submit"/>
 			</form>
 		</div>
-	<?php include 'php/footer.php'
-	?>
+<!-- 	<?php include 'php/footer.php'
+	?> -->
 	<script>
 	$("#confirm").click(function() {
 		$("#center").hide();

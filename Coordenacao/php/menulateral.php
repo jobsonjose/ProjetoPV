@@ -12,7 +12,7 @@
     if(!isset($_SESSION['user'])){
 
 ?>
-                <li><a class="btn btn-inverse" href="#" data-toggle="modal" data-target="#cadastro"><i class="fa fa-user-o"> Sign Up</i></a></li>
+                <li><a class="btn btn-inverse" href="#" data-toggle="modal" data-target="#cadastro"><i class="fa fa-user-o"> Cadastro</i></a></li>
                 <li><a class="btn btn-inverse" href="#" data-toggle="modal" data-target="#login" ><i class="fa fa-user"> Login</i></a></li>
                 </ul>
             </nav>
@@ -27,8 +27,8 @@
             <div class="opcao">
                 <ul style="list-style-type:none">
                     <li><a href="user_form.php">Cadastrar Usuário </a></li>
-                    <li><a href="form_requerimento_aluno.php">Requerimento Aluno(a) </a></li>
-                    <li><a href="form_faltas_professor.php">Formulário de Falta dos Professores</a></li>
+                    <!-- <li><a href="form_requerimento_aluno.php" disabled >Requerimento Aluno(a) </a></li> -->
+                    <!-- <li><a href="form_faltas_professor.php" disabled>Formulário de Falta dos Professores</a></li> -->
                     <li><a href="fluxograma_ipi.php">Grade Curricular </a></li>
                 </ul>
             </div>

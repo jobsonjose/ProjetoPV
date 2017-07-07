@@ -15,7 +15,6 @@
 
 		<div class="formulario">
 			<?php
-				session_start();
 				if (isset($_SESSION['cadastro'])) {
 				?>
 				<div class="alert alert-success" id="center">Cadastro realizado com <strong>Sucesso</strong></div>

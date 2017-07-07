@@ -1,17 +1,16 @@
 <?php
-	session_start();
 	if (isset($_SESSION['cadastro'])) {
  	?>
  	<div class="alert alert-success" id="center">Requerimento Realizado com <strong>Sucesso</strong></div>
 <?php
-	session_destroy();
+	unset($_SESSION['cadastro']);
 	}
 	if (isset($_SESSION['erro'])) {
 
  ?>
 	<div class="alert alert-danger" id="center">Erro ao tentar fazer o Requerimento,<strong>Por favor Tente mais tarde</strong></div>
 <?php
-	session_destroy();
+	unset($_SESSION['erro']);
 	}
  ?>
 <!DOCTYPE html>
@@ -43,8 +42,8 @@
 				<input type="submit" value="Enviar" name="submit"/>
 			</form>
 		</div>
-		<?php include 'php/footer.php'
+	<!-- 	<?php include 'php/footer.php'
 		?>
-
+ -->
 	</body>
 </html>
