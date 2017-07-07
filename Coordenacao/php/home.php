@@ -21,8 +21,10 @@
                         }
                     ?>
 
-        <section style="min-height: 500px;">               
-            
+        <section style="height:50%;">               
+            <?php 
+                include 'slid.php';
+            ?>
         </section>
         <?php include 'footer.php'; ?>
 
