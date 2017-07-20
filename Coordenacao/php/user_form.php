@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,7 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 		<?php include 'estilos.php';
 		?>
-
+		
 	</head>
 	<body>
 		<?php include 'menulateral.php';
@@ -30,7 +28,7 @@
 				}
 			?>
 			<h2>Cadastro de Usuário</h2>
-			<form action="user_action.php" method="post" >
+			<form action="user_action.php" method="POST" >
 				<label for="nome">Nome</label>
 					<input type="text" name="nome">
 				<label for="nome">Login</label>
@@ -41,16 +39,38 @@
 					<input type="email" name="email">
 				<label for="senha">Senha</label>
 					<input type="password" name="senha">
-				<select name="tipo">
+				<select name="tipo" id="tipos" onclick="numeroSiape()">
+					<option disabled selected> -- </option>
 					<option value="professor">Professor</option>
 					<option value="servidor">Servidor</option>
 					<option value="aluno">Aluno</option>
 				</select>
-				<input type="submit" value="Enviar" name="submit"/>
+
+				<div id="professor" style="display: none">
+					<input required type="number" placeholder="Digite seu Siape">
+				</div>
+				<div id="aluno" style="display: none">
+					<input required type="number" placeholder="Digit seu cpf">
+				</div>
+
+				<input type="submit" value="Enviar"/>
 			</form>
 		</div>
 		<?php include 'footer.php'
 		?>
 
+		<script>
+			function numeroSiape(){
+				var i =document.getElementById("tipos");
+
+				if (i.value == 'professor' || i.value == 'servidor') {
+					document.getElementById('professor').style.display = 'block';
+					document.getElementById('aluno').style.display = 'none';
+				}else{
+					document.getElementById('aluno').style.display = 'block';
+					document.getElementById('professor').style.display = 'none';
+				}
+			}
+		</script>
 	</body>
 </html>
