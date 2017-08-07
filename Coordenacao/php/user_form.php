@@ -5,6 +5,40 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 		<?php include 'estilos.php';
 		?>
+		<script>
+			function numeroSiape(){
+				var i =document.getElementById("tipos");
+
+				if (i.value == 'professor' || i.value == 'servidor') {
+					document.getElementById('professor').style.display = 'block';
+					document.getElementById('aluno').style.display = 'none';
+
+				}else{
+					document.getElementById('aluno').style.display = 'block';
+					document.getElementById('professor').style.display = 'none';
+				}
+			}
+			function validar(){
+				var SIAP = formuser.SIAP.value;
+				var CPF = formuser.CPF.value;
+
+				if(document.getElementById('professor').style.display == 'block'){
+					if(SIAP == ''){
+						formuser.CPF.value = null;
+						alert("Preencha o Campo com seu SIAP!");
+						document.getElementById('professor').style.display = 'block';
+						formuser.SIAP.focus();
+						return false;
+					}
+				}if(CPF == ''){
+					formuser.SIAP.value = null;
+					alert('Preencha o Campo com seu CPF!');
+					document.getElementById('aluno').style.display = 'block';	
+					formuser.CPF.focus();
+					return false;
+				}
+			}
+		</script>
 		
 	</head>
 	<body>
@@ -28,7 +62,7 @@
 				}
 			?>
 			<h2>Cadastro de Usuário</h2>
-			<form action="user_action.php" method="POST" >
+			<form action="user_action.php" name="formuser" method="POST" >
 				<label for="nome">Nome</label>
 					<input type="text" name="nome">
 				<label for="nome">Login</label>
@@ -39,7 +73,7 @@
 					<input type="email" name="email">
 				<label for="senha">Senha</label>
 					<input type="password" name="senha">
-				<select name="tipo" id="tipos" onclick="numeroSiape()">
+				<select name="tipo" id="tipos" onClick="numeroSiape()">
 					<option disabled selected> -- </option>
 					<option value="professor">Professor</option>
 					<option value="servidor">Servidor</option>
@@ -47,30 +81,16 @@
 				</select>
 
 				<div id="professor" style="display: none">
-					<input required type="number" placeholder="Digite seu Siape">
+					<input type="number" name="SIAP" placeholder="Digite seu Siape">
 				</div>
 				<div id="aluno" style="display: none">
-					<input required type="number" placeholder="Digit seu cpf">
+					<input type="number" name="CPF" placeholder="Digit seu CPF">
 				</div>
-
-				<input type="submit" value="Enviar"/>
+					<input type="submit" onclick="return validar()">				
 			</form>
 		</div>
 		<?php include 'footer.php'
 		?>
 
-		<script>
-			function numeroSiape(){
-				var i =document.getElementById("tipos");
-
-				if (i.value == 'professor' || i.value == 'servidor') {
-					document.getElementById('professor').style.display = 'block';
-					document.getElementById('aluno').style.display = 'none';
-				}else{
-					document.getElementById('aluno').style.display = 'block';
-					document.getElementById('professor').style.display = 'none';
-				}
-			}
-		</script>
 	</body>
 </html>
