@@ -44,7 +44,6 @@
 					<option value="servidor">Servidor</option>
 					<option value="aluno">Aluno</option>
 				</select>
-
 				<div id="professor" style="display: none">
 					<input type="number" name="SIAP" placeholder="Digite seu Siape">
 				</div>

@@ -2,9 +2,9 @@
 	$dbname = "portal_servidor";
 	$host = "localhost";
 	$user = "root";
-	$pass = "123456";
+	$pass = "ifpe";
 
 	$dsn = "mysql:dbname=$dbname;host=$host;";
 
-	$pdo= new PDO($dsn, $user);
+	$pdo= new PDO($dsn, $user, $pass);
 ?>
