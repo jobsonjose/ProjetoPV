@@ -8,8 +8,10 @@
 	$matricula = $_POST['matricula'];
 	$senha = $_POST['senha'];
 	$funcao = strtoupper($_POST['tipo']);
+	$siap = $_POST['SIAP'];
+	$cpf = $_POST['CPF'];
 
-	$ret = $pdo->exec("INSERT INTO PS_USER (USER_NOME, USER_EMAIL, USER_LOGIN, USER_MATRICULA, USER_SENHA, USER_TIPO) VALUES ('$nome', '$email', '$login', '$matricula', '$senha', '$funcao')");
+	$ret = $pdo->exec("INSERT INTO PS_USER (USER_NOME, USER_EMAIL, USER_LOGIN, USER_MATRICULA, USER_SENHA, USER_TIPO, USER_SIAP, USER_CPF) VALUES ('$nome', '$email', '$login', '$matricula', '$senha', '$funcao', '$siap', '$cpf')");
  	//header("Location: {$_SERVER['HTTP_REFERER']}");
 
 	if ($ret > 0) {
