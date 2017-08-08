@@ -18,11 +18,12 @@
                     <label for="senha">Senha</label>
                         <input type="password" name="senha">
                     <select name="tipo">
+                        <option disabled selected> -- </option>
                         <option value="professor">Professor</option>
                         <option value="servidor">Servidor</option>
                         <option value="aluno">Aluno</option>
                     </select>
-                    <input type="submit" value="Enviar" name="submit"/>
+                    <input type="submit" value="Enviar" name="submit">
 			    </form>
             </div>
             <div class="modal-footer">
