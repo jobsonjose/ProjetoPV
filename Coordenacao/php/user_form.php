@@ -27,16 +27,16 @@
 				}
 			?>
 			<h2>Cadastro de Usuário</h2>
-			<form action="user_action.php" name="form_user" method="POST" >
+			<form action="user_action.php" name="formuser" method="POST" >
 				<label for="nome">Nome</label>
 					<input type="text" name="nome">
 				<label for="nome">Login</label>
-					<input type="text" name="login">
+					<input  required type="text" name="login">
 				<label for="aluno">Matrícula</label>
 					<input type="text" name="matricula">
 				<label for="date">Email:</label>
 					<input type="email" name="email">
-				<label for="senha">Senha</label>
+				<label  required for="senha">Senha</label>
 					<input type="password" name="senha">
 				<select name="tipo" id="tipos" onClick="numeroSiape()">
 					<option disabled selected> -- </option>
