@@ -136,12 +136,12 @@ th {
     color: white;
 }
 select{
-	width: 30%;
+	width: 45%;
 	float: left;
 
 }
 [type=number]{
-	width: 30%;
+	width: 45%;
 	float: right;
 	margin-top: 0%;
 	

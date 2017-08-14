@@ -9,8 +9,7 @@
 
   $rot= $pdo->query("SELECT USER_MATRICULA FROM PS_USER WHERE USER_MATRICULA = '$matricula'");
   $result = $rot->fetchAll();
-  var_dump($rot);
-  var_dump($result);
+  
   echo $result["USER_MATRICULA"][0];
 
   if ($result[0]['USER_MATRICULA'][0] > 0) {
